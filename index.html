@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071009">
+<title>AIWO | Creator & Streamer</title>
+<style>
+:root{--bg:#070a08;--panel:#101811;--green:#39d353;--muted:#a5b2a7;--line:#263c2b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#15351c 0,transparent 42%),var(--bg);color:#f5f7f5;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1050px,90%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:20px}
+.logo{font-weight:900;font-size:24px;letter-spacing:4px;color:var(--green)}
+.links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.links a:hover{color:var(--green)}
+.hero{min-height:470px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px;padding:65px 0}
+.tag{color:var(--green);font-size:12px;letter-spacing:3px;font-weight:bold}
+h1{font-size:clamp(55px,9vw,95px);line-height:.95;letter-spacing:-5px;margin:20px 0}
+h1 span,h2 span{color:var(--green)}
+.lead{color:var(--muted);max-width:520px;font-size:17px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-block;padding:12px 18px;border:1px solid var(--line);border-radius:9px;font-weight:bold}
+.btn.green{background:var(--green);color:#071009;border-color:var(--green)}
+.btn:hover{transform:translateY(-2px)}
+.avatar{position:relative;width:min(280px,75vw);aspect-ratio:1;margin:auto;overflow:hidden;border:2px solid #3b994a;border-radius:22px;background:linear-gradient(#245c2d 0 65%,#48a83b 65%);box-shadow:0 0 65px #39d35320}
+.avatar:before{content:"";position:absolute;bottom:0;left:0;right:0;height:30%;background:repeating-linear-gradient(90deg,#23752e 0 19px,#359c3f 19px 38px)}
+.person{position:absolute;z-index:2;left:50%;top:20%;transform:translateX(-50%);width:100px;height:190px}
+.head{position:absolute;left:17px;top:0;width:66px;height:66px;background:#efd0b8;border:5px solid #151515;box-shadow:inset 0 14px #171717}
+.head:after{content:"";position:absolute;top:23px;left:9px;width:8px;height:8px;background:#111;box-shadow:29px 0 #111}
+.body{position:absolute;top:64px;left:12px;width:76px;height:67px;background:#111916;border:4px solid #080a09}
+.leg{position:absolute;top:127px;width:34px;height:49px;background:#7a8580;border:4px solid #151515}
+.leg.l{left:13px}.leg.r{right:13px}
+.}
+section{padding:48px 0}
+.heading{margin-bottom:24px}
+.heading small{color:var(--green);font-weight:bold;letter-spacing:3px}
+h2{font-size:clamp(30px,5vw,43px);margin:4px 0}
+.note{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.clips-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.card:hover{border-color:var(--green);transform:translateY(-3px)}
+.symbol{font-size:28px}
+.card h3{margin:10px 0 3px}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.clip{padding:0;overflow:hidden;display:block}
+.thumb{aspect-ratio:16/9;display:grid;place-items:center;background:repeating-linear-gradient(0deg,transparent 0 20px,#ffffff08 20px 21px),repeating-linear-gradient(90deg,#173b20 0 20px,#1c4726 20px 40px)}
+.play{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#071009;font-size:20px}
+.cliptext{padding:17px}
+.about{background:#101811;border:1px solid var(--line);border-radius:16px;padding:26px}
+footer{margin-top:30px;border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){nav{align-items:flex-start;flex-direction:column}.hero{grid-template-columns:1fr;padding:45px 0}.avatar{grid-row:1}.grid{grid-template-columns:1fr}h1{letter-spacing:-3px}.links{gap:13px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="logo" href="#home">AIWO.</a>
+<div class="links">
+<a href="#socials">Social media</a>
+<a href="#clips">Klipy</a>
+<a href="#achievements">Osiągnięcia</a>
+<a href="#about">O mnie</a>
+</div>
+</nav>
+</header>
+<main class="wrap" id="home">
+<section class="hero">
+<div>
+<div class="tag">CREATOR · STREAMER · GAMER</div>
+<h1>Siema,<br>tu <span>AIWO.</span></h1>
+<p class="lead">Gaming, transmisje na żywo i najlepsze momenty z gier. Wbijaj na kanały, oglądaj klipy i zostań częścią ekipy!</p>
+<div class="buttons">
+<a class="btn green" href="https://www.twitch.tv/a1w00" target="_blank" rel="noopener">▶ Oglądaj live</a>
+<a class="btn" href="#clips">Zobacz klipy ↓</a>
+</div>
+</div>
+<div class="avatar" aria-label="Minecraftowa postać z mieczem">
+<div class="person"><div class="head"></div><div class="body"></div><div class="leg l"></div><div class="leg r"></div></div>
+<div class="sword"></div>
+</div>
+</section>
+
+<section id="socials">
+<div class="heading"><small>ZNAJDŹ MNIE</small><h2>Moje <span>social media</span></h2></div>
+<div class="grid">
+<a class="card" href="https://www.twitch.tv/a1w00" target="_blank" rel="noopener"><div class="symbol">🟣</div><h3>Twitch</h3><p>A1w00 · transmisje na żywo</p></a>
+<a class="card" href="https://www.youtube.com/@Aiwo_official" target="_blank" rel="noopener"><div class="symbol">▶️</div><h3>YouTube</h3><p>Aiwo_official · filmy i Shorts</p></a>
+<a class="card" href="https://www.tiktok.com/@aiwo_r6" target="_blank" rel="noopener"><div class="symbol">🎵</div><h3>TikTok</h3><p>@aiwo_r6 · krótkie klipy</p></a>
+</div>
+</section>
+
+<section id="clips">
+<div class="heading"><small>NAJLEPSZE MOMENTY</small><h2>Best <span>clips</span></h2><p class="note">Moje ulubione klipy i najlepsze akcje.</p></div>
+<div class="clips-grid">
+<a class="card clip" href="https://www.tiktok.com/@aiwottv/video/7673639998784113952?is" target="_blank" rel="noopener"><div class="thumb"><span class="play">▶</span></div><div class="cliptext"><h3>🎬 Mój najlepszy klip</h3><p>Obejrzyj mój klip na TikToku!</p></div></a>
+<a class="card clip" href=https://www.tiktok.com/@aiwottv/video/7686914803268341025?is_from_webapp=1&sender_device=pc&web_id=7619685566124295702 target="_blank" rel="noopener"><div class="thumb"><span class="play">▶</span></div><div class="cliptext"
+><h3>😂 Śmieszny klip</h3><p>Zobacz zabawny moment z gry!</p></div></a>
+</div>
+</section>
+```<div class="heading"><small>MOJA DROGA</small><h2>Osiągnięcia</h2></div>
+<div class="grid">
+<div class="card"><div class="symbol">🎙️</div><h3>Streamer</h3><p>Rozwijam kanał i robię kolejne transmisje.</p></div>
+<div class="card"><div class="symbol">🎬</div><h3>Twórca filmów</h3><p>Gamingowe klipy, Shorts i najlepsze akcje.</p></div>
+<div class="card"><div class="symbol">💚</div><h3>Społeczność</h3><p>Dzięki wszystkim, którzy oglądają i wspierają AIWO!</p></div>
+</div>
+</section>
+
+<section id="about">
+<div class="about"><div class="tag">KIM JESTEM?</div><h2>To dopiero <span>początek.</span></h2><p class="note">Siema! Jestem AIWO — twórca internetowy i streamer. Lubię gaming, dobrą zabawę i rozwijanie własnej społeczności. Wpadaj na transmisje i sprawdź moje klipy!</p><div class="buttons"><a class="btn green" href="https://www.twitch.tv/a1w00" target="_blank" rel="noopener">Wbij na Twitcha ↗</a></div></div>
+</section>
+</main>
+<footer class="wrap"><strong>AIWO · Creator & Streamer</strong><span>© <span id="year">2026</span> AIWO · Zrobione z 💚</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
