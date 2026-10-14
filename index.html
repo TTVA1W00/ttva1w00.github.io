@@ -380,6 +380,52 @@ footer span {
   .card {
     padding: 19px;
   }
+  .stream-preview {
+  width: min(720px, 100%);
+  margin: 28px auto 0;
+  padding: 20px;
+  background: #101811;
+  border: 1px solid #263c2b;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.stream-preview h2 {
+  color: #f2f7f2;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.stream-preview .live-label {
+  color: #39d353;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.stream-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.stream-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.stream-preview p {
+  color: #a5b2a7;
+  font-size: 13px;
+  margin-top: 12px;
+}
 }
 </style>
 </head>
@@ -400,7 +446,30 @@ footer span {
 </header>
 
 <main>
+<section class="wrap" id="stream">
+  <div class="stream-preview">
+    <h2>AIWO <span style="color:#39d353">LIVE</span></h2>
+    <div class="live-label">🔴 TWÓJ STREAM NA ŻYWO</div>
 
+    <div class="stream-frame">
+      <iframe
+        src="https://player.twitch.tv/?channel=a1w00&parent=ttva1w00.github.io&muted=true"
+        title="Stream AIWO na Twitchu"
+        allowfullscreen="true"
+        scrolling="no">
+      </iframe>
+    </div>
+
+    <p>Oglądaj mnie na żywo bezpośrednio na stronie!</p>
+    <a class="button"
+       href="https://www.twitch.tv/a1w00"
+       target="_blank"
+       rel="noopener noreferrer"
+       style="margin-top:14px">
+      Otwórz Twitcha ↗
+    </a>
+  </div>
+</section>
   <section class="hero wrap" id="home">
     <div class="tag">CREATOR & STREAMER</div>
     <h1>AIWO<span>.</span></h1>
